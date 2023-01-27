@@ -26,7 +26,7 @@ This Node.js command-line application takes in information about employees on a 
 Bram Gibson
     
 ## Tests
-To test this program download the files and open a terminal with node.js installed in that folder. Type "Node index.js" and if the prompts show up the program should be running.
+To test this program download the files and open a terminal with node.js installed in that folder. Type "Npm i" to get jest and other npm packages. After installation, run "npm test". This will run through a set of tests to make sure the constructors are working and you will be good to go!
     
 ## Questions
 If you have any questions about this project, reach out to me on my GitHub profile.
