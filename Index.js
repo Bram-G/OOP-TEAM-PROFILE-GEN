@@ -19,13 +19,13 @@ function start() {
     .then((answers) => {
       switch (answers.question) {
         case "Add a new Employee":
-          console.log("add new Employee");
+          // console.log("add new Employee");
           newEmployee();
           break;
 
         case "Print HTML":
           const html = generateHtml(team);
-          console.log("print HTML");
+          // console.log("print HTML");
           fs.writeFile("./gen/index.html", html, (err) => {
             if (err) {
               throw err;
@@ -51,17 +51,17 @@ function newEmployee() {
     .then((ans) => {
       switch (ans.empType) {
         case "Intern":
-          console.log("making an Intern");
+          // console.log("making an Intern");
           makeIntern();
           break;
 
         case "Engineer":
-          console.log("Making an Engineer");
+          // console.log("Making an Engineer");
           makeEngineer();
           break;
 
         case "Manager":
-          console.log("Making a Manager");
+          // console.log("Making a Manager");
           makeManager();
           break;
       }
@@ -95,7 +95,7 @@ function makeIntern() {
     .then((ans) => {
       const intern = new Intern(ans.name, ans.id, ans.email, ans.school);
       team.push(intern);
-      console.log(team);
+      // console.log(team);
       start();
     });
 }
@@ -132,7 +132,7 @@ function makeEngineer() {
         ans.gitHubUser
       );
       team.push(engineer);
-      console.log(team);
+      // console.log(team);
       start();
     });
 }
@@ -169,7 +169,7 @@ function makeManager() {
         ans.officeNumber
       );
       team.push(manager);
-      console.log(team);
+      // console.log(team);
       start();
     });
 }
